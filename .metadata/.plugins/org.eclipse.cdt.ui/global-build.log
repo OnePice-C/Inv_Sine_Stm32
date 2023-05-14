@@ -1,0 +1,38 @@
+09:44:10 **** Clean-only build of configuration Debug for project TIM_DMA ****
+make -j8 clean 
+rm -rf ./Startup/startup_stm32f107vctx.d ./Startup/startup_stm32f107vctx.o
+rm -rf ./Src/main.d ./Src/main.o ./Src/main.su ./Src/stm32f10x_it.d ./Src/stm32f10x_it.o ./Src/stm32f10x_it.su ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su ./Src/system_stm32f10x.d ./Src/system_stm32f10x.o ./Src/system_stm32f10x.su
+rm -rf ./Lib/src/misc.d ./Lib/src/misc.o ./Lib/src/misc.su ./Lib/src/stm32f10x_dma.d ./Lib/src/stm32f10x_dma.o ./Lib/src/stm32f10x_dma.su ./Lib/src/stm32f10x_gpio.d ./Lib/src/stm32f10x_gpio.o ./Lib/src/stm32f10x_gpio.su ./Lib/src/stm32f10x_rcc.d ./Lib/src/stm32f10x_rcc.o ./Lib/src/stm32f10x_rcc.su ./Lib/src/stm32f10x_tim.d ./Lib/src/stm32f10x_tim.o ./Lib/src/stm32f10x_tim.su
+rm -rf TIM_DMA.elf TIM_DMA.list TIM_DMA.map default.size.stdout
+ 
+09:44:11 **** Build of configuration Debug for project TIM_DMA ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f107vctx.d" -MT"Startup/startup_stm32f107vctx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f107vctx.o" "../Startup/startup_stm32f107vctx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F107VCTx -DSTM32F1 -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -c -I../Inc -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Lib/inc" -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Inc/CMSIS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/stm32f10x_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F107VCTx -DSTM32F1 -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -c -I../Inc -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Lib/inc" -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Inc/CMSIS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32f10x_it.d" -MT"Src/stm32f10x_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/stm32f10x_it.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F107VCTx -DSTM32F1 -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -c -I../Inc -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Lib/inc" -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Inc/CMSIS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F107VCTx -DSTM32F1 -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -c -I../Inc -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Lib/inc" -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Inc/CMSIS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f10x.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F107VCTx -DSTM32F1 -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -c -I../Inc -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Lib/inc" -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Inc/CMSIS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/system_stm32f10x.d" -MT"Src/system_stm32f10x.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/system_stm32f10x.o"
+arm-none-eabi-gcc "../Lib/src/misc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F107VCTx -DSTM32F1 -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -c -I../Inc -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Lib/inc" -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Inc/CMSIS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Lib/src/misc.d" -MT"Lib/src/misc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Lib/src/misc.o"
+arm-none-eabi-gcc "../Lib/src/stm32f10x_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F107VCTx -DSTM32F1 -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -c -I../Inc -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Lib/inc" -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Inc/CMSIS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Lib/src/stm32f10x_dma.d" -MT"Lib/src/stm32f10x_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Lib/src/stm32f10x_dma.o"
+arm-none-eabi-gcc "../Lib/src/stm32f10x_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F107VCTx -DSTM32F1 -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -c -I../Inc -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Lib/inc" -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Inc/CMSIS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Lib/src/stm32f10x_gpio.d" -MT"Lib/src/stm32f10x_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Lib/src/stm32f10x_gpio.o"
+arm-none-eabi-gcc "../Lib/src/stm32f10x_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F107VCTx -DSTM32F1 -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -c -I../Inc -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Lib/inc" -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Inc/CMSIS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Lib/src/stm32f10x_rcc.d" -MT"Lib/src/stm32f10x_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Lib/src/stm32f10x_rcc.o"
+arm-none-eabi-gcc "../Lib/src/stm32f10x_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F107VCTx -DSTM32F1 -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -c -I../Inc -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Lib/inc" -I"C:/Users/lvcuo/Desktop/LCD_107/TIM_DMA/Inc/CMSIS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Lib/src/stm32f10x_tim.d" -MT"Lib/src/stm32f10x_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Lib/src/stm32f10x_tim.o"
+arm-none-eabi-gcc -o "TIM_DMA.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\lvcuo\Desktop\LCD_107\TIM_DMA\STM32F107VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM_DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM_DMA.elf
+ 
+arm-none-eabi-size   TIM_DMA.elf 
+arm-none-eabi-objdump -h -S  TIM_DMA.elf  > "TIM_DMA.list"
+   text	   data	    bss	    dec	    hex	filename
+   3428	     12	   1596	   5036	   13ac	TIM_DMA.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM_DMA.list
+ 
+09:44:15 **** Incremental Build of configuration Debug for project TIM_DMA ****
+make -j8 all 
+arm-none-eabi-size   TIM_DMA.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3428	     12	   1596	   5036	   13ac	TIM_DMA.elf
+Finished building: default.size.stdout
+ 

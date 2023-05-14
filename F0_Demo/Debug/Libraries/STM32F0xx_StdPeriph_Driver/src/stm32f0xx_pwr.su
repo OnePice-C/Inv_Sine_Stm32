@@ -1,0 +1,10 @@
+../Libraries/STM32F0xx_StdPeriph_Driver/src/stm32f0xx_pwr.c:80:6:PWR_DeInit	8	static
+../Libraries/STM32F0xx_StdPeriph_Driver/src/stm32f0xx_pwr.c:94:6:PWR_BackupAccessCmd	16	static
+../Libraries/STM32F0xx_StdPeriph_Driver/src/stm32f0xx_pwr.c:152:6:PWR_PVDLevelConfig	24	static
+../Libraries/STM32F0xx_StdPeriph_Driver/src/stm32f0xx_pwr.c:178:6:PWR_PVDCmd	16	static
+../Libraries/STM32F0xx_StdPeriph_Driver/src/stm32f0xx_pwr.c:234:6:PWR_WakeUpPinCmd	16	static
+../Libraries/STM32F0xx_StdPeriph_Driver/src/stm32f0xx_pwr.c:367:6:PWR_EnterSleepMode	16	static,ignoring_inline_asm
+../Libraries/STM32F0xx_StdPeriph_Driver/src/stm32f0xx_pwr.c:410:6:PWR_EnterSTOPMode	24	static,ignoring_inline_asm
+../Libraries/STM32F0xx_StdPeriph_Driver/src/stm32f0xx_pwr.c:465:6:PWR_EnterSTANDBYMode	8	static,ignoring_inline_asm
+../Libraries/STM32F0xx_StdPeriph_Driver/src/stm32f0xx_pwr.c:509:12:PWR_GetFlagStatus	24	static
+../Libraries/STM32F0xx_StdPeriph_Driver/src/stm32f0xx_pwr.c:535:6:PWR_ClearFlag	16	static

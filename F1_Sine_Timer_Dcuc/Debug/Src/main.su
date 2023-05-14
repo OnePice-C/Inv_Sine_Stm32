@@ -1,0 +1,6 @@
+../Src/main.c:39:5:main	24	static
+../Src/main.c:86:6:Delay_ms	24	static
+../Src/main.c:92:7:ReadAdc_Max	8	static
+../Src/main.c:98:6:GPIO_Configture	8	static
+../Src/main.c:104:6:TIM1_Configuraion	8	static
+../Src/main.c:179:6:ADC_Configuration	8	static

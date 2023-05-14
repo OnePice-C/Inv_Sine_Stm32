@@ -1,0 +1,10 @@
+13:27:32 **** Incremental Build of configuration Debug for project F1_Sine_Timer1_LCuc ****
+make -j8 all 
+arm-none-eabi-size   F1_Sine_Timer1_LCuc.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7636	    916	   3492	  12044	   2f0c	F1_Sine_Timer1_LCuc.elf
+Finished building: default.size.stdout
+ 
+
+13:27:33 Build Finished. 0 errors, 0 warnings. (took 594ms)
+

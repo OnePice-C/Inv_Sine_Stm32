@@ -1,0 +1,10 @@
+../Libraries/Source/stm32f0xx_syscfg.c:85:6:SYSCFG_DeInit	8	static
+../Libraries/Source/stm32f0xx_syscfg.c:107:6:SYSCFG_MemoryRemapConfig	24	static
+../Libraries/Source/stm32f0xx_syscfg.c:148:6:SYSCFG_DMAChannelRemapConfig	16	static
+../Libraries/Source/stm32f0xx_syscfg.c:192:6:SYSCFG_I2CFastModePlusConfig	16	static
+../Libraries/Source/stm32f0xx_syscfg.c:218:6:SYSCFG_IRDAEnvSelection	16	static
+../Libraries/Source/stm32f0xx_syscfg.c:240:6:SYSCFG_EXTILineConfig	24	static
+../Libraries/Source/stm32f0xx_syscfg.c:329:11:SYSCFG_GetPendingIT	16	static
+../Libraries/Source/stm32f0xx_syscfg.c:346:6:SYSCFG_BreakConfig	16	static
+../Libraries/Source/stm32f0xx_syscfg.c:361:12:SYSCFG_GetFlagStatus	24	static
+../Libraries/Source/stm32f0xx_syscfg.c:390:6:SYSCFG_ClearFlag	16	static
